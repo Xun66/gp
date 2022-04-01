@@ -54,7 +54,7 @@ complex matrix `Q_fg`. The full field's smoothness can then be written as the su
 This yields a sparse quadratic form `u^* Q u`, where the complex column vector `u` encodes each each per-face vector. The row vector `u^*` is `u`'s adjoint (conjugate transpose), and `Q` is the appropriate combination of the matrices `Q_{fg}`.
 Thus, finding the smoothest field under the prescribed constraints is equivalent solving
 <br/>
-![](https://latex.codecogs.com/svg.latex?\begin{align*}\min&space;u^*&space;Q&space;u&space;%5C%5C&space;u|_{cf}&space;&=&space;c,\end{align*})<br/>
+![](https://latex.codecogs.com/svg.image?\begin{align*}\min&space;u^*&space;Q&space;u&space;%5C%5C&space;u|_{cf}&space;&=&space;c,\end{align*})<br/>
 <!-- \begin{align*}
 \min u^* Q u \\
  u|_{cf} &= c,
