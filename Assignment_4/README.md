@@ -44,7 +44,7 @@ The difference ("non-smoothness") of the two vectors across the edge  `(f,g)` ca
 (recall that `||z||^2 = z z.conjugate()` is a complex number `z`'s squared magnitude).
 This is a quadratic form on the complex variables `uf`, `ug` and can be manipulated into the form
 <br/>
-![](https://latex.codecogs.com/svg.image?E_{fg}(u_f,u_g)=\begin{bmatrix}\overline{u_f}&\overline{u_g}\end{bmatrix}Q_{fg}\begin{bmatrix}u_f\\u_g\end{bmatrix})<br/>
+![](https://latex.codecogs.com/svg.latex?E_{fg}(u_f,u_g)=\begin{bmatrix}\overline{u_f}&\overline{u_g}\end{bmatrix}Q_{fg}\begin{bmatrix}u_f%5C%5Cu_g\end{bmatrix})<br/>
 <!-- $E_{fg}(u_f,u_g)=\begin{bmatrix}\overline{u_f}&\overline{u_g}\end{bmatrix}Q_{fg}\begin{bmatrix}u_f\\u_g\end{bmatrix}$  -->
 for a particular
 complex matrix `Q_fg`. The full field's smoothness can then be written as the sum of all these per-edge energies:
@@ -54,14 +54,14 @@ complex matrix `Q_fg`. The full field's smoothness can then be written as the su
 This yields a sparse quadratic form `u^* Q u`, where the complex column vector `u` encodes each each per-face vector. The row vector `u^*` is `u`'s adjoint (conjugate transpose), and `Q` is the appropriate combination of the matrices `Q_{fg}`.
 Thus, finding the smoothest field under the prescribed constraints is equivalent solving
 <br/>
-![](https://latex.codecogs.com/svg.image?\begin{align*}\min&space;u^*&space;Q&space;u&space;\\&space;u|_{cf}&space;&=&space;c,\end{align*})<br/>
+![](https://latex.codecogs.com/svg.latex?\begin{align*}\min&space;u^*&space;Q&space;u&space;%5C%5C&space;u|_{cf}&space;&=&space;c,\end{align*})<br/>
 <!-- \begin{align*}
 \min u^* Q u \\
  u|_{cf} &= c,
 \end{align*} -->
 where `cf` are the constrained face indices and `c` are the prescribed vectors at those faces. We can differentiate the smoothness energy to find its minimum, thus obtaining a (complex) linear system
 <br/>
-![](https://latex.codecogs.com/svg.image?\begin{align*}&space;&space;&space;&space;Q&space;u&space;&=&space;0&space;\\&space;&space;&space;&space;u|_{cf}&space;&=&space;c.\end{align*})<br/>
+![](https://latex.codecogs.com/svg.image?\begin{align*}&space;&space;&space;&space;Q&space;u&space;&=&space;0&space;%5C%5C&space;&space;&space;&space;u|_{cf}&space;&=&space;c.\end{align*})<br/>
 <!-- \begin{align*}
     Q u &= 0 \\
     u|_{cf} &= c.
