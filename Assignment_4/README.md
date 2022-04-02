@@ -111,6 +111,7 @@ Then the scalar function's (vector-valued) gradient is
 <!-- $\vec g_t = \nabla S_t = \sum\limits_{\textrm{vertex}~i~\in~t}^3 s_i \nabla\phi_i^t$. -->
 
 Since the "hat" functions are piecewise linear, their  gradients
+![](https://latex.codecogs.com/svg.image?\nabla\phi_i^t)<br/>
 <!-- $\nabla\phi_i^t$-->
 are constant within each triangle, and so is `gt` (the full scalar function's gradient). Specifically, `gt` is a linear combination of the constant hat function gradients with the (unknown) values `si` as coefficients, meaning that we can write an expression of the form `g  = G s`, where `s` is a #V x 1 column vector holding each `si`, `g` is a column vector of size 3#F x 1 consisting of the vectors `gt` "flattened" and vertically stacked (i.e., using `gt.T.reshape(gt.size, 1)`), and `G` is the so-called "gradient matrix" of size 3#F x #V.
 
